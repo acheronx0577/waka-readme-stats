@@ -314,7 +314,11 @@ Dart         2 repos        █░░░░░░░░░░░░░░░░�
 CSS          2 repos        █░░░░░░░░░░░░░░░░░░░░░░░░   6.25%
 ```
 
-Barras SVG (`BAR_STYLE: "svg"`, p.ex. `BAR_RADIUS: "4"`, `BAR_COLOR` / `BAR_TRACK_COLOR` padrão):
+Barras SVG, cantos retos (`BAR_STYLE: "svg"`, `BAR_RADIUS: "0"`, `BAR_COLOR` / `BAR_TRACK_COLOR` padrão):
+
+![Barras de progresso SVG (retas)](https://i.imgur.com/eShKuJH.png)
+
+Barras SVG, cantos arredondados (`BAR_STYLE: "svg"`, `BAR_RADIUS: "4"`):
 
 ![Barras de progresso SVG (arredondadas)](https://i.imgur.com/dYOgG6I.png)
 
