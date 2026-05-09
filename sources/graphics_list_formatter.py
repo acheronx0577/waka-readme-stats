@@ -44,7 +44,7 @@ def make_graph(percent: float):
     """
     # Clamp percent to valid range [0, 100]
     percent = max(0, min(100, percent))
-    
+
     if EM.BAR_STYLE == "svg":
         width = 200
         filled = round(width * percent / 100)
