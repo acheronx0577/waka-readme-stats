@@ -1,4 +1,3 @@
-import os
 from os import getenv
 
 
@@ -70,10 +69,10 @@ class EnvironmentManager:
         MAX_REPOS = 0
     SYMBOL_VERSION = int(getenv("INPUT_SYMBOL_VERSION", "1"))
     BADGE_STYLE = getenv("BADGE_STYLE", "flat")
-    BAR_STYLE: str = os.getenv("BAR_STYLE", "text")  # "text" or "svg"
-    BAR_COLOR: str = os.getenv("BAR_COLOR", "#90CAF9")
-    BAR_TRACK_COLOR: str = os.getenv("BAR_TRACK_COLOR", "#172f45")
-    BAR_RADIUS: int = int(os.getenv("BAR_RADIUS", "0"))  # 0 = square, any number = round
+    BAR_STYLE: str = getenv("BAR_STYLE", "text")  # "text" or "svg"
+    BAR_COLOR: str = getenv("BAR_COLOR", "#90CAF9")
+    BAR_TRACK_COLOR: str = getenv("BAR_TRACK_COLOR", "#172f45")
+    BAR_RADIUS: int = int(getenv("BAR_RADIUS", "0"))  # 0 = square, any number = round
 
     DEBUG_LOGGING = getenv("INPUT_DEBUG_LOGGING", "0").lower() in _TRUTHY
     DEBUG_RUN = getenv("DEBUG_RUN", "False").lower() in _TRUTHY
