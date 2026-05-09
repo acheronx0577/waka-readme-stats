@@ -301,6 +301,24 @@ Beispiel-Workflow mit aktivierten SVG-Bars:
     BAR_RADIUS: "4"
 ```
 
+**Vorher / Nachher**
+
+Standard-Unicode-Bars (`BAR_STYLE: "text"` oder wenn `BAR_STYLE` weggelassen wird):
+
+```text
+Vue          8 repos        ██████░░░░░░░░░░░░░░░░░░░   25.0%
+Java         6 repos        ████░░░░░░░░░░░░░░░░░░░░░   18.75%
+JavaScript   6 repos        ████░░░░░░░░░░░░░░░░░░░░░   18.75%
+PHP          3 repos        ██░░░░░░░░░░░░░░░░░░░░░░░   9.38%
+Python       2 repos        █░░░░░░░░░░░░░░░░░░░░░░░░   6.25%
+Dart         2 repos        █░░░░░░░░░░░░░░░░░░░░░░░░   6.25%
+CSS          2 repos        █░░░░░░░░░░░░░░░░░░░░░░░░   6.25%
+```
+
+SVG-Bars (`BAR_STYLE: "svg"`, z. B. `BAR_RADIUS: "4"`, Standard `BAR_COLOR` / `BAR_TRACK_COLOR`):
+
+![SVG-Fortschrittsbars (abgerundet)](https://i.imgur.com/dYOgG6I.png)
+
 Der `DEBUG_LOGGING`-Flag kann gesetzt werden, um die Ausgabelautstärke der GitHub-Action zu erhöhen, standardmäßig entspricht er der internen Debug-Eigenschaft des Laufers.
 
 **Zeitstrahl**

@@ -299,6 +299,24 @@ SVG 막대가 활성화된 워크플로 예:
     BAR_RADIUS: "4"
 ```
 
+**변경 전 / 후**
+
+기본 Unicode 막대 (`BAR_STYLE: "text"`, 또는 `BAR_STYLE` 생략):
+
+```text
+Vue          8 repos        ██████░░░░░░░░░░░░░░░░░░░   25.0%
+Java         6 repos        ████░░░░░░░░░░░░░░░░░░░░░   18.75%
+JavaScript   6 repos        ████░░░░░░░░░░░░░░░░░░░░░   18.75%
+PHP          3 repos        ██░░░░░░░░░░░░░░░░░░░░░░░   9.38%
+Python       2 repos        █░░░░░░░░░░░░░░░░░░░░░░░░   6.25%
+Dart         2 repos        █░░░░░░░░░░░░░░░░░░░░░░░░   6.25%
+CSS          2 repos        █░░░░░░░░░░░░░░░░░░░░░░░░   6.25%
+```
+
+SVG 막대 (`BAR_STYLE: "svg"`, 예: `BAR_RADIUS: "4"`, 기본 `BAR_COLOR` / `BAR_TRACK_COLOR`):
+
+![SVG 진행 막대(둥근 모서리)](https://i.imgur.com/dYOgG6I.png)
+
 `DEBUG_LOGGING` 플래그를 설정하여 GitHub Action의 출력 세부 정보 수준을 높일 수 있으며, 기본값은 내부 실행자 디버그 속성과 같습니다.
 
 **타임라인**

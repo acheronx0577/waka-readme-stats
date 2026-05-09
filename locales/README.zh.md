@@ -303,6 +303,24 @@ CSS          2 个仓库        █░░░░░░░░░░░░░░░
     BAR_RADIUS: "4"
 ```
 
+**变更前后**
+
+默认 Unicode 条形（`BAR_STYLE: "text"`，或省略 `BAR_STYLE`）：
+
+```text
+Vue          8 repos        ██████░░░░░░░░░░░░░░░░░░░   25.0%
+Java         6 repos        ████░░░░░░░░░░░░░░░░░░░░░   18.75%
+JavaScript   6 repos        ████░░░░░░░░░░░░░░░░░░░░░   18.75%
+PHP          3 repos        ██░░░░░░░░░░░░░░░░░░░░░░░   9.38%
+Python       2 repos        █░░░░░░░░░░░░░░░░░░░░░░░░   6.25%
+Dart         2 repos        █░░░░░░░░░░░░░░░░░░░░░░░░   6.25%
+CSS          2 repos        █░░░░░░░░░░░░░░░░░░░░░░░░   6.25%
+```
+
+SVG 条形（`BAR_STYLE: "svg"`，例如 `BAR_RADIUS: "4"`，默认 `BAR_COLOR` / `BAR_TRACK_COLOR`）：
+
+![SVG 进度条（圆角）](https://i.imgur.com/dYOgG6I.png)
+
 `DEBUG_LOGGING` 标志可以让 Github Action 的日志更长，默认情况下与内部运行调试设置同步。
 `BADGE_STYLE` 标志决定了生成徽章的样式，可以设置为 `flat`, `flat-square`、`plastic`、`for-the-badge` 或者 `social`。
 |    徽章样式    |                                             预览                                               |

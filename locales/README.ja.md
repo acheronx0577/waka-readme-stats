@@ -299,6 +299,24 @@ SVGバーが有効なワークフロー例:
     BAR_RADIUS: "4"
 ```
 
+**変更前 / 変更後**
+
+既定の Unicode バー（`BAR_STYLE: "text"`、または `BAR_STYLE` を省略）:
+
+```text
+Vue          8 repos        ██████░░░░░░░░░░░░░░░░░░░   25.0%
+Java         6 repos        ████░░░░░░░░░░░░░░░░░░░░░   18.75%
+JavaScript   6 repos        ████░░░░░░░░░░░░░░░░░░░░░   18.75%
+PHP          3 repos        ██░░░░░░░░░░░░░░░░░░░░░░░   9.38%
+Python       2 repos        █░░░░░░░░░░░░░░░░░░░░░░░░   6.25%
+Dart         2 repos        █░░░░░░░░░░░░░░░░░░░░░░░░   6.25%
+CSS          2 repos        █░░░░░░░░░░░░░░░░░░░░░░░░   6.25%
+```
+
+SVG バー（`BAR_STYLE: "svg"`、例: `BAR_RADIUS: "4"`、既定の `BAR_COLOR` / `BAR_TRACK_COLOR`）:
+
+![SVG プログレスバー（角丸）](https://i.imgur.com/dYOgG6I.png)
+
 `DEBUG_LOGGING` フラグを設定することで、GitHub Actionの出力の詳細度を増やすことができます。デフォルトでは内部ランナーのデバッグプロパティに等しくなります。
 
 **タイムライン**

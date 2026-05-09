@@ -300,6 +300,24 @@ Exemple de flux de travail avec barres SVG activées :
     BAR_RADIUS: "4"
 ```
 
+**Avant / après**
+
+Barres Unicode par défaut (`BAR_STYLE: "text"`, ou en omettant `BAR_STYLE`) :
+
+```text
+Vue          8 repos        ██████░░░░░░░░░░░░░░░░░░░   25.0%
+Java         6 repos        ████░░░░░░░░░░░░░░░░░░░░░   18.75%
+JavaScript   6 repos        ████░░░░░░░░░░░░░░░░░░░░░   18.75%
+PHP          3 repos        ██░░░░░░░░░░░░░░░░░░░░░░░   9.38%
+Python       2 repos        █░░░░░░░░░░░░░░░░░░░░░░░░   6.25%
+Dart         2 repos        █░░░░░░░░░░░░░░░░░░░░░░░░   6.25%
+CSS          2 repos        █░░░░░░░░░░░░░░░░░░░░░░░░   6.25%
+```
+
+Barres SVG (`BAR_STYLE: "svg"`, par ex. `BAR_RADIUS: "4"`, `BAR_COLOR` / `BAR_TRACK_COLOR` par défaut) :
+
+![Barres de progression SVG (arrondies)](https://i.imgur.com/dYOgG6I.png)
+
 Le drapeau `DEBUG_LOGGING` peut être défini pour augmenter la verbosité de la sortie de l'action GitHub, par défaut égal à la propriété de débogage interne du runner
 
 **Chronologie**
