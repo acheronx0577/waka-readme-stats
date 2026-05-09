@@ -278,6 +278,31 @@ CSS          2 个仓库        █░░░░░░░░░░░░░░░
 |    2    |      ⣿     |       ⣀     |
 |    3    |      ⬛    |       ⬜    |
 
+**SVG 进度条**
+
+您可以使用以下标志从 Unicode 文本条形图切换到彩色 SVG 条形图:
+
+- `BAR_STYLE` — 设置为 `"svg"` 以启用 SVG 条形图，或 `"text"` (默认) 用于 Unicode 条形图
+- `BAR_COLOR` — 填充部分的十六进制颜色 (默认: `"#90CAF9"` 浅蓝色)
+- `BAR_TRACK_COLOR` — 背景轨道的十六进制颜色 (默认: `"#172f45"` 深蓝色)
+- `BAR_RADIUS` — 圆角的边框半径 (默认: `"0"` 为正方形)
+  - `"0"` = 锐利的方形边缘
+  - `"4"` = 微妙的圆角
+  - 任何正整数都可以工作
+
+启用 SVG 条形图的工作流示例:
+
+```yaml
+- uses: anmol098/waka-readme-stats@master
+  with:
+    WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+    GH_TOKEN: ${{ secrets.GH_TOKEN }}
+    BAR_STYLE: "svg"
+    BAR_COLOR: "#90CAF9"
+    BAR_TRACK_COLOR: "#172f45"
+    BAR_RADIUS: "4"
+```
+
 `DEBUG_LOGGING` 标志可以让 Github Action 的日志更长，默认情况下与内部运行调试设置同步。
 `BADGE_STYLE` 标志决定了生成徽章的样式，可以设置为 `flat`, `flat-square`、`plastic`、`for-the-badge` 或者 `social`。
 |    徽章样式    |                                             预览                                               |

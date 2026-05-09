@@ -275,6 +275,31 @@ A bandeira `SYMBOL_VERSION` pode ser definida para o símbolo da barra de progre
 |    2    |      ⣿     |       ⣀     |
 |    3    |      ⬛    |       ⬜    |
 
+**Barras de Progresso SVG**
+
+Você pode alternar entre barras de texto Unicode e barras SVG coloridas com os seguintes sinalizadores:
+
+- `BAR_STYLE` — Defina como `"svg"` para ativar barras SVG, ou `"text"` (padrão) para barras Unicode
+- `BAR_COLOR` — Cor hexadecimal para a parte preenchida (padrão: `"#90CAF9"` azul claro)
+- `BAR_TRACK_COLOR` — Cor hexadecimal para a faixa de fundo (padrão: `"#172f45"` azul escuro)
+- `BAR_RADIUS` — Raio da borda para cantos arredondados (padrão: `"0"` para quadrado)
+  - `"0"` = Bordas quadradas nítidas
+  - `"4"` = Cantos arredondados sutis
+  - Qualquer número inteiro positivo funciona
+
+Exemplo de fluxo de trabalho com barras SVG ativadas:
+
+```yaml
+- uses: anmol098/waka-readme-stats@master
+  with:
+    WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+    GH_TOKEN: ${{ secrets.GH_TOKEN }}
+    BAR_STYLE: "svg"
+    BAR_COLOR: "#90CAF9"
+    BAR_TRACK_COLOR: "#172f45"
+    BAR_RADIUS: "4"
+```
+
 A bandeira `DEBUG_LOGGING` pode ser definida para aumentar a verbosidade da saída da Ação do GitHub, por padrão igual à propriedade de depuração do executor interno
 
 **Linha do Tempo**

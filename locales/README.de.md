@@ -276,6 +276,31 @@ Der `SYMBOL_VERSION`-Flag kann für das Symbol der Fortschrittsleiste gesetzt we
 |    2    |      ⣿     |       ⣀     |
 |    3    |      ⬛    |       ⬜    |
 
+**SVG-Fortschrittsbars**
+
+Sie können vom Unicode-Text zu farbigen SVG-Bars mit den folgenden Flags wechseln:
+
+- `BAR_STYLE` — Setzen Sie auf `"svg"` um SVG-Bars zu aktivieren, oder `"text"` (Standard) für Unicode-Bars
+- `BAR_COLOR` — Hex-Farbe für den gefüllten Teil (Standard: `"#90CAF9"` Hellblau)
+- `BAR_TRACK_COLOR` — Hex-Farbe für den Hintergrund-Track (Standard: `"#172f45"` Dunkelblau)
+- `BAR_RADIUS` — Rahmenradius für abgerundete Ecken (Standard: `"0"` für Quadrat)
+  - `"0"` = Scharfe quadratische Kanten
+  - `"4"` = Subtil abgerundete Ecken
+  - Jede positive Ganzzahl funktioniert
+
+Beispiel-Workflow mit aktivierten SVG-Bars:
+
+```yaml
+- uses: anmol098/waka-readme-stats@master
+  with:
+    WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+    GH_TOKEN: ${{ secrets.GH_TOKEN }}
+    BAR_STYLE: "svg"
+    BAR_COLOR: "#90CAF9"
+    BAR_TRACK_COLOR: "#172f45"
+    BAR_RADIUS: "4"
+```
+
 Der `DEBUG_LOGGING`-Flag kann gesetzt werden, um die Ausgabelautstärke der GitHub-Action zu erhöhen, standardmäßig entspricht er der internen Debug-Eigenschaft des Laufers.
 
 **Zeitstrahl**

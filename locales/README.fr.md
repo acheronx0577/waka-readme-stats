@@ -275,6 +275,31 @@ Le drapeau `SYMBOL_VERSION` peut être défini pour le symbole de la barre de pr
 |    2    |      ⣿     |       ⣀     |
 |    3    |      ⬛    |       ⬜    |
 
+**Barres de Progression SVG**
+
+Vous pouvez passer des barres de texte Unicode aux barres SVG colorées avec les drapeaux suivants :
+
+- `BAR_STYLE` — Définissez sur `"svg"` pour activer les barres SVG, ou `"text"` (par défaut) pour les barres Unicode
+- `BAR_COLOR` — Couleur hexadécimale pour la portion remplie (par défaut: `"#90CAF9"` bleu clair)
+- `BAR_TRACK_COLOR` — Couleur hexadécimale pour la piste d'arrière-plan (par défaut: `"#172f45"` bleu foncé)
+- `BAR_RADIUS` — Rayon de bordure pour les coins arrondis (par défaut: `"0"` pour carré)
+  - `"0"` = Bords carrés nets
+  - `"4"` = Coins légèrement arrondis
+  - Tout nombre entier positif fonctionne
+
+Exemple de flux de travail avec barres SVG activées :
+
+```yaml
+- uses: anmol098/waka-readme-stats@master
+  with:
+    WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+    GH_TOKEN: ${{ secrets.GH_TOKEN }}
+    BAR_STYLE: "svg"
+    BAR_COLOR: "#90CAF9"
+    BAR_TRACK_COLOR: "#172f45"
+    BAR_RADIUS: "4"
+```
+
 Le drapeau `DEBUG_LOGGING` peut être défini pour augmenter la verbosité de la sortie de l'action GitHub, par défaut égal à la propriété de débogage interne du runner
 
 **Chronologie**

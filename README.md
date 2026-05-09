@@ -282,6 +282,31 @@ The `SYMBOL_VERSION` flag can be set for the symbol for the progress bar (defaul
 |    2    |      ⣿     |       ⣀     |
 |    3    |      ⬛    |       ⬜    |
 
+**SVG Progress Bars**
+
+You can switch from Unicode text bars to colorful SVG bars with the following flags:
+
+- `BAR_STYLE` — Set to `"svg"` to enable SVG bars, or `"text"` (default) for Unicode bars
+- `BAR_COLOR` — Hex color for the filled portion (default: `"#90CAF9"` light blue)
+- `BAR_TRACK_COLOR` — Hex color for the background track (default: `"#172f45"` dark blue)
+- `BAR_RADIUS` — Border radius for rounded corners (default: `"0"` for square)
+  - `"0"` = Sharp square edges
+  - `"4"` = Subtle rounded corners
+  - Any positive integer works
+
+Example workflow with SVG bars enabled:
+
+```yaml
+- uses: anmol098/waka-readme-stats@master
+  with:
+    WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+    GH_TOKEN: ${{ secrets.GH_TOKEN }}
+    BAR_STYLE: "svg"
+    BAR_COLOR: "#90CAF9"
+    BAR_TRACK_COLOR: "#172f45"
+    BAR_RADIUS: "4"
+```
+
 The `DEBUG_LOGGING` flag can be set to increase the GitHub Action's output verbosity, The default is the internal runner's debug property.
 The `BADGE_STYLE` flag defines the style for the generated badges and can be set to `flat`, `flat-square`, `plastic`, `for-the-badge`, or `social`.
 |    Badge Style    |                                             Preview                                               |
