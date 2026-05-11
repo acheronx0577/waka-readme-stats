@@ -54,7 +54,7 @@ def make_graph(percent: float):
             f'<svg width="{width}" height="8" xmlns="http://www.w3.org/2000/svg">'
             f'<rect width="{width}" height="8" rx="{r}" fill="{EM.BAR_TRACK_COLOR}"/>'
             f'<rect width="{filled}" height="8" rx="{r}" fill="{EM.BAR_COLOR}"/>'
-            f'</svg>'
+            f"</svg>"
         )
     done_block, empty_block = Symbol.get_symbols(EM.SYMBOL_VERSION)
     percent_quart = round(percent / 4)
@@ -85,7 +85,7 @@ def make_list(data: List = None, names: List[str] = None, texts: List[str] = Non
 
     data = list(zip(names, texts, percents))
     top_data = sorted(data[:top_num], key=lambda record: record[2], reverse=True) if sort else data[:top_num]
-    
+
     if EM.BAR_STYLE == "svg":
         # Fixed column layout (widths in user units; total view width = sum of columns + trailing margin):
         # name x=0..169 (170px), time x=170..279 (110px), bar x=280..639 (BAR_WIDTH 360px), % text from x=648.
@@ -107,31 +107,13 @@ def make_list(data: List = None, names: List[str] = None, texts: List[str] = Non
             name_text = html.escape(n[:25])
             time_text = html.escape(t[:25])
 
-            rows_svg += (
-                f'<text x="{SVG_COL_NAME_X}" y="{y}" font-family="monospace" font-size="13" '
-                f'fill="{EM.TEXT_PRIMARY_COLOR}">{name_text}</text>'
-            )
-            rows_svg += (
-                f'<text x="{SVG_COL_TIME_X}" y="{y}" font-family="monospace" font-size="13" '
-                f'fill="{EM.TEXT_SECONDARY_COLOR}">{time_text}</text>'
-            )
-            rows_svg += (
-                f'<rect x="{SVG_COL_BAR_X}" y="{y-10}" width="{SVG_BAR_WIDTH}" height="8" rx="{EM.BAR_RADIUS}" '
-                f'fill="{EM.BAR_TRACK_COLOR}"/>'
-            )
-            rows_svg += (
-                f'<rect x="{SVG_COL_BAR_X}" y="{y-10}" width="{filled}" height="8" rx="{EM.BAR_RADIUS}" '
-                f'fill="{EM.BAR_COLOR}"/>'
-            )
-            rows_svg += (
-                f'<text x="{SVG_COL_PCT_X}" y="{y}" font-family="monospace" font-size="12" '
-                f'fill="{EM.TEXT_SECONDARY_COLOR}">{p:.2f}%</text>'
-            )
+            rows_svg += f'<text x="{SVG_COL_NAME_X}" y="{y}" font-family="monospace" font-size="13" ' f'fill="{EM.TEXT_PRIMARY_COLOR}">{name_text}</text>'
+            rows_svg += f'<text x="{SVG_COL_TIME_X}" y="{y}" font-family="monospace" font-size="13" ' f'fill="{EM.TEXT_SECONDARY_COLOR}">{time_text}</text>'
+            rows_svg += f'<rect x="{SVG_COL_BAR_X}" y="{y-10}" width="{SVG_BAR_WIDTH}" height="8" rx="{EM.BAR_RADIUS}" ' f'fill="{EM.BAR_TRACK_COLOR}"/>'
+            rows_svg += f'<rect x="{SVG_COL_BAR_X}" y="{y-10}" width="{filled}" height="8" rx="{EM.BAR_RADIUS}" ' f'fill="{EM.BAR_COLOR}"/>'
+            rows_svg += f'<text x="{SVG_COL_PCT_X}" y="{y}" font-family="monospace" font-size="12" ' f'fill="{EM.TEXT_SECONDARY_COLOR}">{p:.2f}%</text>'
 
-        return (
-            f'<svg width="{SVG_VIEW_WIDTH}" viewBox="0 0 {SVG_VIEW_WIDTH} {height}" '
-            f'xmlns="http://www.w3.org/2000/svg">{rows_svg}</svg>'
-        )
+        return f'<svg width="{SVG_VIEW_WIDTH}" viewBox="0 0 {SVG_VIEW_WIDTH} {height}" ' f'xmlns="http://www.w3.org/2000/svg">{rows_svg}</svg>'
     else:
         # Text mode: existing format with fixed-width spacing
         data_list = [f"{n[:25]}{' ' * (25 - len(n))}{t}{' ' * (20 - len(t))}{make_graph(p)}   {p:05.2f} % " for n, t, p in top_data]
