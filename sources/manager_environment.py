@@ -72,6 +72,8 @@ class EnvironmentManager:
     BAR_STYLE = getenv("BAR_STYLE", "text")  # "text" or "svg"
     BAR_COLOR = getenv("BAR_COLOR", "#90CAF9")
     BAR_TRACK_COLOR = getenv("BAR_TRACK_COLOR", "#172f45")
+    TEXT_PRIMARY_COLOR = getenv("TEXT_PRIMARY_COLOR", "#c9d1d9")
+    TEXT_SECONDARY_COLOR = getenv("TEXT_SECONDARY_COLOR", "#8b949e")
     BAR_RADIUS = int(getenv("BAR_RADIUS", "0"))  # 0 = square, any number = round
 
     DEBUG_LOGGING = getenv("INPUT_DEBUG_LOGGING", "0").lower() in _TRUTHY
