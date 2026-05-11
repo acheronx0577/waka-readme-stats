@@ -187,6 +187,16 @@ inputs:
     description: "Border radius for rounded corners of the SVG bar"
     default: "0"
 
+  TEXT_PRIMARY_COLOR:
+    required: false
+    description: "Hex color for primary SVG list text (e.g. language names)"
+    default: "#c9d1d9"
+
+  TEXT_SECONDARY_COLOR:
+    required: false
+    description: "Hex color for secondary SVG list text (e.g. times, percentages)"
+    default: "#8b949e"
+
   DEBUG_LOGGING:
     required: false
     description: "Whether to enable action debug logging"

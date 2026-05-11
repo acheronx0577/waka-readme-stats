@@ -6,13 +6,17 @@ on:
     - cron: '30 18 * * *'
   workflow_dispatch:
 
+# If you use anmol098/waka-readme-stats@master and see "Unexpected input" for BAR_*,
+# remove those `with:` keys there until upstream action.yml lists them (env may still differ).
 jobs:
   update-readme:
     name: Update Readme with Metrics
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v6.0.2
-      
+
       - uses: ./
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
@@ -21,7 +25,6 @@ jobs:
           BAR_COLOR: "#90CAF9"
           BAR_TRACK_COLOR: "#172f45"
           BAR_RADIUS: "4"
-          BAR_TABLE_STYLE: "markdown"
           SHOW_COMMIT: "True"
           SHOW_DAYS_OF_WEEK: "True"
           SHOW_LANGUAGE: "True"
