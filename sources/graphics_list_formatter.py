@@ -37,25 +37,14 @@ class Symbol(Enum):
 
 def make_graph(percent: float):
     """
-    Make text progress bar or SVG bar.
-    Text bar length is 25 characters.
+    Make a text progress bar (25 characters wide).
 
     :param percent: Completion percent of the progress bar.
-    :return: The string progress bar representation (text or SVG).
+    :return: The string progress bar representation.
     """
     # Clamp percent to valid range [0, 100]
     percent = max(0, min(100, percent))
 
-    if EM.BAR_STYLE == "svg":
-        width = 200
-        filled = round(width * percent / 100)
-        r = EM.BAR_RADIUS
-        return (
-            f'<svg width="{width}" height="8" xmlns="http://www.w3.org/2000/svg">'
-            f'<rect width="{width}" height="8" rx="{r}" fill="{EM.BAR_TRACK_COLOR}"/>'
-            f'<rect width="{filled}" height="8" rx="{r}" fill="{EM.BAR_COLOR}"/>'
-            f"</svg>"
-        )
     done_block, empty_block = Symbol.get_symbols(EM.SYMBOL_VERSION)
     percent_quart = round(percent / 4)
     return f"{done_block * percent_quart}{empty_block * (25 - percent_quart)}"
