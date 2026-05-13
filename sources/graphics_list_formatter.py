@@ -1,7 +1,7 @@
 from enum import Enum
 from typing import Dict, Tuple, List
 from datetime import datetime
-import html
+from html import escape
 
 from pytz import timezone, utc
 
