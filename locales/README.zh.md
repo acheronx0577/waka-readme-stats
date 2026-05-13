@@ -289,6 +289,8 @@ CSS          2 个仓库        █░░░░░░░░░░░░░░░
   - `"0"` = 锐利的方形边缘
   - `"4"` = 微妙的圆角
   - 任何正整数都可以工作
+- `TEXT_PRIMARY_COLOR` — SVG 列表主要文本（如语言/项目名称）的十六进制颜色 (默认: `"#c9d1d9"`)
+- `TEXT_SECONDARY_COLOR` — SVG 列表次要文本（如时间和百分比）的十六进制颜色 (默认: `"#8b949e"`)
 
 启用 SVG 条形图的工作流示例:
 
@@ -301,6 +303,8 @@ CSS          2 个仓库        █░░░░░░░░░░░░░░░
     BAR_COLOR: "#90CAF9"
     BAR_TRACK_COLOR: "#172f45"
     BAR_RADIUS: "4"
+    TEXT_PRIMARY_COLOR: "#c9d1d9"
+    TEXT_SECONDARY_COLOR: "#8b949e"
 ```
 
 **变更前后**
@@ -374,6 +378,7 @@ SVG 条形，圆角（`BAR_STYLE: "svg"`，例如 `BAR_RADIUS: "4"`）：
 10. [Arnav Jindal](https://github.com/Daggy1234)：贡献了合并请求 [#48](https://github.com/anmol098/waka-readme-stats/pull/48)
 11. [Daniel Rowe](https://github.com/DanRowe)：贡献了合并请求 [#57](https://github.com/anmol098/waka-readme-stats/pull/57)
 12. [Ss5h](https://github.com/tlatkdgus1)：添加了自然语言文本的翻译支持 [#136](https://github.com/anmol098/waka-readme-stats/pull/136)
+13. [acheronx0577](https://github.com/acheronx0577)：添加了带有颜色和形状选项的 SVG 进度条支持 [#657](https://github.com/anmol098/waka-readme-stats/pull/657)
 
 <details>
 
@@ -518,6 +523,8 @@ SVG 条形，圆角（`BAR_STYLE: "svg"`，例如 `BAR_RADIUS: "4"`）：
   - [Luicen Loua](https://github.com/lucien-loua)
 
   - [DataBoySu](https://github.com/DataBoySu)
+
+  - [AcheronX.](https://github.com/acheronx0577)
 
 </details>
 

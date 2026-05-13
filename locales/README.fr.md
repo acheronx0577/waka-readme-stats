@@ -286,6 +286,8 @@ Vous pouvez passer des barres de texte Unicode aux barres SVG colorées avec les
   - `"0"` = Bords carrés nets
   - `"4"` = Coins légèrement arrondis
   - Tout nombre entier positif fonctionne
+- `TEXT_PRIMARY_COLOR` — Couleur hexadécimale pour le texte principal de la liste SVG, comme les noms de langages/projets (par défaut : `"#c9d1d9"`)
+- `TEXT_SECONDARY_COLOR` — Couleur hexadécimale pour le texte secondaire de la liste SVG, comme les durées et pourcentages (par défaut : `"#8b949e"`)
 
 Exemple de flux de travail avec barres SVG activées :
 
@@ -298,6 +300,8 @@ Exemple de flux de travail avec barres SVG activées :
     BAR_COLOR: "#90CAF9"
     BAR_TRACK_COLOR: "#172f45"
     BAR_RADIUS: "4"
+    TEXT_PRIMARY_COLOR: "#c9d1d9"
+    TEXT_SECONDARY_COLOR: "#8b949e"
 ```
 
 **Avant / après**
@@ -359,6 +363,7 @@ Les contributions sont les bienvenues ♥ ! Veuillez partager toute fonctionnali
 10. [Arnav Jindal](https://github.com/Daggy1234): Pour la demande de tirage [#48](https://github.com/anmol098/waka-readme-stats/pull/48)
 11. [Daniel Rowe](https://github.com/DanRowe): Pour la demande de tirage [#57](https://github.com/anmol098/waka-readme-stats/pull/57)
 12. [Ss5h](https://github.com/tlatkdgus1): Pour l'ajout de la prise en charge de l'écriture de phrases naturelles pour la traduction [#136](https://github.com/anmol098/waka-readme-stats/pull/136)
+13. [acheronx0577](https://github.com/acheronx0577): Pour l'ajout de la prise en charge des barres de progression SVG avec des options de couleur et de forme [#657](https://github.com/anmol098/waka-readme-stats/pull/657)
 
 <details>
 
@@ -503,6 +508,8 @@ Les contributions sont les bienvenues ♥ ! Veuillez partager toute fonctionnali
 - [Luicen Loua](https://github.com/lucien-loua)
 
 - [DataBoySu](https://github.com/DataBoySu)
+
+- [AcheronX.](https://github.com/acheronx0577)
 
 </details>
 

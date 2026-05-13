@@ -287,6 +287,8 @@ Sie können vom Unicode-Text zu farbigen SVG-Bars mit den folgenden Flags wechse
   - `"0"` = Scharfe quadratische Kanten
   - `"4"` = Subtil abgerundete Ecken
   - Jede positive Ganzzahl funktioniert
+- `TEXT_PRIMARY_COLOR` — Hex-Farbe für den primären Text der SVG-Liste, z. B. Sprach-/Projektnamen (Standard: `"#c9d1d9"`)
+- `TEXT_SECONDARY_COLOR` — Hex-Farbe für den sekundären Text der SVG-Liste, z. B. Zeiten und Prozentangaben (Standard: `"#8b949e"`)
 
 Beispiel-Workflow mit aktivierten SVG-Bars:
 
@@ -299,6 +301,8 @@ Beispiel-Workflow mit aktivierten SVG-Bars:
     BAR_COLOR: "#90CAF9"
     BAR_TRACK_COLOR: "#172f45"
     BAR_RADIUS: "4"
+    TEXT_PRIMARY_COLOR: "#c9d1d9"
+    TEXT_SECONDARY_COLOR: "#8b949e"
 ```
 
 **Vorher / Nachher**
@@ -360,6 +364,7 @@ Beiträge sind willkommen ♥! Bitte teile jede Funktion und füge Unit-Tests hi
 10. [Arnav Jindal](https://github.com/Daggy1234): Für den Pull Request [#48](https://github.com/anmol098/waka-readme-stats/pull/48)
 11. [Daniel Rowe](https://github.com/DanRowe): Für den Pull Request [#57](https://github.com/anmol098/waka-readme-stats/pull/57)
 12. [Ss5h](https://github.com/tlatkdgus1): Für die Hinzufügung von Unterstützung für natürliche Satzformulierungen bei der Übersetzung [#136](https://github.com/anmol098/waka-readme-stats/pull/136)
+13. [acheronx0577](https://github.com/acheronx0577): Für die Hinzufügung der Unterstützung von SVG-Fortschrittsbalken mit Farb- und Formoptionen [#657](https://github.com/anmol098/waka-readme-stats/pull/657)
 
 <details>
 
@@ -504,6 +509,8 @@ Beiträge sind willkommen ♥! Bitte teile jede Funktion und füge Unit-Tests hi
 - [Luicen Loua](https://github.com/lucien-loua)
 
 - [DataBoySu](https://github.com/DataBoySu)
+
+- [AcheronX.](https://github.com/acheronx0577)
 
 </details>
 

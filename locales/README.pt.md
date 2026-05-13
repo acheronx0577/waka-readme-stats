@@ -286,6 +286,8 @@ Você pode alternar entre barras de texto Unicode e barras SVG coloridas com os 
   - `"0"` = Bordas quadradas nítidas
   - `"4"` = Cantos arredondados sutis
   - Qualquer número inteiro positivo funciona
+- `TEXT_PRIMARY_COLOR` — Cor hexadecimal para o texto principal da lista SVG, como nomes de linguagens/projetos (padrão: `"#c9d1d9"`)
+- `TEXT_SECONDARY_COLOR` — Cor hexadecimal para o texto secundário da lista SVG, como tempos e porcentagens (padrão: `"#8b949e"`)
 
 Exemplo de fluxo de trabalho com barras SVG ativadas:
 
@@ -298,6 +300,8 @@ Exemplo de fluxo de trabalho com barras SVG ativadas:
     BAR_COLOR: "#90CAF9"
     BAR_TRACK_COLOR: "#172f45"
     BAR_RADIUS: "4"
+    TEXT_PRIMARY_COLOR: "#c9d1d9"
+    TEXT_SECONDARY_COLOR: "#8b949e"
 ```
 
 **Antes e depois**
@@ -359,6 +363,7 @@ Contribuições são bem-vindas ♥! Por favor, compartilhe quaisquer funcionali
 10. [Arnav Jindal](https://github.com/Daggy1234): Por Pull Request [#48](https://github.com/anmol098/waka-readme-stats/pull/48)
 11. [Daniel Rowe](https://github.com/DanRowe): Por Pull Request [#57](https://github.com/anmol098/waka-readme-stats/pull/57)
 12. [Ss5h](https://github.com/tlatkdgus1): Por adicionar suporte para escrita de frase natural para tradução [#136](https://github.com/anmol098/waka-readme-stats/pull/136)
+13. [acheronx0577](https://github.com/acheronx0577): Por adicionar suporte a barras de progresso SVG com opções de cor e forma [#657](https://github.com/anmol098/waka-readme-stats/pull/657)
 
 <details>
 
@@ -503,6 +508,8 @@ Contribuições são bem-vindas ♥! Por favor, compartilhe quaisquer funcionali
 - [Luicen Loua](https://github.com/lucien-loua)
 
 - [DataBoySu](https://github.com/DataBoySu)
+
+- [AcheronX.](https://github.com/acheronx0577)
 
 </details>
 

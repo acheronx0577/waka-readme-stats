@@ -293,6 +293,8 @@ You can switch from Unicode text bars to colorful SVG bars with the following fl
   - `"0"` = Sharp square edges
   - `"4"` = Subtle rounded corners
   - Any positive integer works
+- `TEXT_PRIMARY_COLOR` — Hex color for primary SVG list text such as language/project names (default: `"#c9d1d9"`)
+- `TEXT_SECONDARY_COLOR` — Hex color for secondary SVG list text such as times and percentages (default: `"#8b949e"`)
 
 Example workflow with SVG bars enabled:
 
@@ -305,6 +307,8 @@ Example workflow with SVG bars enabled:
     BAR_COLOR: "#90CAF9"
     BAR_TRACK_COLOR: "#172f45"
     BAR_RADIUS: "4"
+    TEXT_PRIMARY_COLOR: "#c9d1d9"
+    TEXT_SECONDARY_COLOR: "#8b949e"
 ```
 
 **Before / after**
@@ -378,6 +382,7 @@ Please share any features, and add unit tests! Use the pull request and issue sy
 10. [Arnav Jindal](https://github.com/Daggy1234): For Pull Request [#48](https://github.com/anmol098/waka-readme-stats/pull/48)
 11. [Daniel Rowe](https://github.com/DanRowe): For Pull Request [#57](https://github.com/anmol098/waka-readme-stats/pull/57)
 12. [Ss5h](https://github.com/tlatkdgus1): For adding support for natural sentence writing for translation [#136](https://github.com/anmol098/waka-readme-stats/pull/136)
+13. [acheronx0577](https://github.com/acheronx0577): For adding SVG progress bar support with color and shape options [#657](https://github.com/anmol098/waka-readme-stats/pull/657)
 
 <details>
 
@@ -522,6 +527,8 @@ Please share any features, and add unit tests! Use the pull request and issue sy
 - [Luicen Loua](https://github.com/lucien-loua)
 
 - [DataBoySu](https://github.com/DataBoySu)
+
+- [AcheronX.](https://github.com/acheronx0577)
 
 </details>
 
