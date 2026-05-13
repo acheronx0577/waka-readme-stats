@@ -1,7 +1,7 @@
 from enum import Enum
 from typing import Dict, Tuple, List
 from datetime import datetime
-import html
+from html import escape
 
 from pytz import timezone, utc
 
@@ -93,8 +93,8 @@ def make_list(data: List = None, names: List[str] = None, texts: List[str] = Non
             filled = round(SVG_BAR_WIDTH * p / 100)
 
             # Truncate and escape text for SVG
-            name_text = html.escape(n[:25])
-            time_text = html.escape(t[:25])
+            name_text = escape(n[:25])
+            time_text = escape(t[:25])
 
             rows_svg += f'<text x="{SVG_COL_NAME_X}" y="{y}" font-family="monospace" font-size="13" fill="{EM.TEXT_PRIMARY_COLOR}">{name_text}</text>'
             rows_svg += f'<text x="{SVG_COL_TIME_X}" y="{y}" font-family="monospace" font-size="13" fill="{EM.TEXT_SECONDARY_COLOR}">{time_text}</text>'
